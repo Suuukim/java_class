@@ -10,6 +10,8 @@ public class OperatorEx5 {
 //		System.out.printf("%c, %d", ch,(int)ch);
 		float f1 = 15.5f;
 		double d1 = 10.5;
+		byte bb3 = -128;
+		byte bb4 = 1;
 		
 		int i1 = b1 + b2;	//byte + byte -> int + int
 		
@@ -25,7 +27,11 @@ public class OperatorEx5 {
 		System.out.println("i1 : " + i1);
 		System.out.println("b3 : " + b3);
 		System.out.println("i2 : " + i2);
-		System.out.println("f2 : " + f2);
+		System.out.println("f2 : " + f2 ); 
 		System.out.println("d2 : " + d2);
+		System.out.println("bb3 - bb4 : " + (byte)(bb3 + bb4));
+		
+		// overflow : byte -128 ~ 127		최대값 +1 == 최솟값
+		// underflow : byte -128 ~ 127 		최솟값 -1 == 최댓값
 	}
 }
