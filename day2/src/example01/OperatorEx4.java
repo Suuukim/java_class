@@ -14,7 +14,7 @@ public class OperatorEx4 {
 		// OR : 둘 중 하나라도 1이면 1
 		System.out.println("x와 y를 |(OR)연산 결과 : " + (x|y));
 		// XOR : 두 비트가 서로 다르면 1
-		System.out.println("x와 y를 ^(XOR)연산 결과 : ");
-	
+		System.out.println("x와 y를 ^(XOR)연산 결과 : " + (x^y));
+		
 	}
 }
