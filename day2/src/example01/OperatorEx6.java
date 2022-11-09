@@ -15,12 +15,6 @@ public class OperatorEx6 {
 		result = (i >= 9) || (i < -8);	//true
 		System.out.println("i >= 4 ) || (i < -8) : " + result);
 		
-		/*
-		 * A : 65
-		 * Z : 90
-		 * a : 97
-		 * z : 122
-		 */
 		
 		
 	}
