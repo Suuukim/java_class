@@ -15,6 +15,22 @@ public class OperatorEx6 {
 		result = (i >= 9) || (i < -8);	//true
 		System.out.println("i >= 4 ) || (i < -8) : " + result);
 		
+		/*
+		 * A : 65
+		 * Z : 90
+		 * a : 97
+		 * z : 122 
+		 */
+		
+		result = (ch >= 'a' && ch <= 'z'); // 소문자인지 확인하는 조건식 true
+		System.out.println("(ch >= 'a' && ch <= 'z') : " + result);
+		
+		result = (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'); //해당문자가 알파벳인지 확인하는 조건문
+		result = (ch >= 'a' && ch <= 'z') && (ch >= 'A' && ch <= 'Z'); //false
+		System.out.println("알파벳 여부 : " + result);
+		
+		
+		
 		
 		
 	}
