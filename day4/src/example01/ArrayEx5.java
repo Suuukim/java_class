@@ -12,6 +12,9 @@ public class ArrayEx5 {
 			sum += score[i];
 		}
 		
+		average = sum / (double)score.length;
 		
+		System.out.println("총합 : " + sum);
+		System.out.println("평균 : " + average);
 	}
 }
