@@ -12,21 +12,22 @@ public class test {
 		int people = 0;	// 인원
 		
 		Scanner sc = new Scanner(System.in);
-		
 		System.out.print("코인을 입력하세요 > ");
 		coin = sc.nextInt();
-		System.out.print("시간을 입력하세요 > ");
-		time = sc.nextInt();
-		System.out.print("인원을 입력하세요 > ");
-		people = sc.nextInt();
-		System.out.print("서비스를 입력하세요 > ");
 		
+		switch(coin) {
+			case 0:
+				System.out.print("시간을 입력하세요 > ");
+				time = sc.nextInt();
+				break;
+			default :
+				System.out.print("인원을 입력하세요 > ");
+				people = sc.nextInt();
+				break;
+		}
 		System.out.println("입력한 코인 : " + coin + "개");
 		System.out.println("입력한 시간 : " + time + "분");
 		System.out.println("입력한 인원 : " + people + "명");
 		
-		if(coin == 0) {
-			 
-		}
 	}
 }
