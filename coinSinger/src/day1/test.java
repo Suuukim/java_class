@@ -25,6 +25,7 @@ public class test {
 				people = sc.nextInt();
 				break;
 		}
+		
 		System.out.println("입력한 코인 : " + coin + "개");
 		System.out.println("입력한 시간 : " + time + "분");
 		System.out.println("입력한 인원 : " + people + "명");
