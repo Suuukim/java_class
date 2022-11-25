@@ -18,7 +18,7 @@ public class Movie {
 			System.out.println("[코리아 아카데미 영화관에 오신것을 환영합니다]");
 			System.out.println("1.예매  2.예매확인  3.환불  4.종료");
 			System.out.print("메뉴를 선택해주세요 >> ");
-			menu -= sc.nextInt();
+			menu = sc.nextInt();
 			if(menu == 4) {
 				System.out.println("이용해주셔서 감사합니다.");
 				break;
@@ -60,28 +60,47 @@ public class Movie {
 				System.out.print("결제하실 금액을 입력해주세요 >> ");
 				payment = sc.nextInt();
 				
-				while(true) {
-					int result = payment - totalPrice;
-					totalPrice -= payment;
-					
-					if(result < 0) {
-						System.out.printf("결제 금액이 부족합니다. 추가금액은 %d원입니다. \n", totalPrice);
-						System.out.print("추가 금액 입력 >> ");
-						payment = sc.nextInt();
-					}else if(result > 0) {
-						System.out.printf("거스름돈은 %d원입니다. 감사합니다. \n", result);
-						break;
-					}else {
-						System.out.println("예매 감사합니다.");
-						break;
+					while(true) {
+						int result = payment - totalPrice;
+						totalPrice -= payment;
+						
+						if(result < 0) {
+							System.out.printf("결제 금액이 부족합니다. 추가금액은 %d원입니다. \n", totalPrice);
+							System.out.print("추가 금액 입력 >> ");
+							payment = sc.nextInt();
+						}else if(result > 0) {
+							System.out.printf("거스름돈은 %d원입니다. 감사합니다. \n", result);
+							break;
+						}else {
+							System.out.println("예매 감사합니다.");
+							break;
+						}
 					}
-				}
 					
-				}else if(menu ==2 ) {
+				}else if(menu == 2 ) {	//예매정보확인
 					if(ticket == 0) {
 						System.out.println("예매정보가 없습니다.");
 						continue;
 					}
+					System.out.println("[예매정보]");
+					System.out.println("예매 영화 : " + movieName);
+					System.out.println("예매 인원 : " + ticket);
+			}else if(menu == 3) {
+				if(ticket == 0) {
+					System.out.println("예매정보가 없습니다");
+					continue;
+				}
+				System.out.printf("현재 예매하신 총 티켓은 %d장입니다.\n", ticket);
+				System.out.print("몇장을 취소하시겠습니까 >> ");
+				refund = sc.nextInt();
+				if(ticket - refund < 0) {
+					System.out.printf("총 취소할 수 있는 티켓은 %d장입니다.\n", ticket);
+					continue;
+				}else {
+					System.out.printf("총 %d장 취소 완료하였습니다.\n", refund);
+					System.out.printf("최종 금액은 %d원입니다. \n" , refund * moviePrice);
+					ticket -= refund;
+				}
 			}
 			
 			
