@@ -10,3 +10,9 @@ public class AccessEx2 extends Access{
 //		System.out.println(privateVar); 
 	}
 }
+
+class AccessEx3{
+	Access ac = new Access();
+	int num = ac.publicVar;
+//	int num1 = ac.protedctedVar;
+}
