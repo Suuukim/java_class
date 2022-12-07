@@ -13,3 +13,14 @@ class Product{
 		bonusPoint = (int)(price/10.0);
 	}
 }
+
+class TvProduct extends Product {
+	public TvProduct() {
+		super(100);
+	}
+	
+	@Override
+	public String toString() {
+		return "TvProduct";
+	}
+}
