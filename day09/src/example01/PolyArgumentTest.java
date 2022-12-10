@@ -50,7 +50,6 @@ class Buyer{			//고객, 물건을 사는 사람
 			System.out.println("잔액이 부족하여 물건을 살 수 없습니다.");
 			return;
 		}
-		
 		money -= tv.price;
 		bonusPoint += tv.bonusPoint;
 		System.out.println(tv + "을/를 구매하였습니다. ");
