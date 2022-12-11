@@ -5,7 +5,11 @@ public class PolyArgumentTest {
 		Buyer b = new Buyer();
 		b.buy(new TvProduct());
 		System.out.println("현재 남은 돈 : " + b.money);
-		System.out.println("");
+		System.out.println("현재 보너스 점수 : " + b.bonusPoint);
+	
+		b.buy(new ComputerProduct());
+		System.out.println("현재 남은 돈 : " + b.money);
+		System.out.println("현재 보너스 점수 : " + b.bonusPoint);
 	}
 }
 
@@ -42,7 +46,7 @@ class ComputerProduct extends Product{
 }
 
 class Buyer{			//고객, 물건을 사는 사람
-	int money = 10000;	//보유 금액
+	int money = 1000;	//보유 금액
 	int bonusPoint = 0;	//보너스 금액
 	
 	void buy(TvProduct tv) {
@@ -54,7 +58,15 @@ class Buyer{			//고객, 물건을 사는 사람
 		bonusPoint += tv.bonusPoint;
 		System.out.println(tv + "을/를 구매하였습니다. ");
 	}
-	
+	void buy(ComputerProduct pc) {
+		if(money < pc.price) {
+			System.out.println("잔액이 부족하여 물건을 살 수 없습니다.");
+			return;
+		}
+		money -= pc.price;
+		bonusPoint += pc.bonusPoint;
+		System.out.println(pc + "을/를 구매하였습니다. ");
+	}
 }
 
 
