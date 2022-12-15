@@ -30,5 +30,6 @@ public class test {
 		System.out.println("입력한 시간 : " + time + "분");
 		System.out.println("입력한 인원 : " + people + "명");
 		
+		
 	}
 }

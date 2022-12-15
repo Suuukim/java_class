@@ -6,4 +6,6 @@ public class input {
 	int people;	//인원
 	int service;	//서비스
 	int number;		//방 번호
+	
+
 }

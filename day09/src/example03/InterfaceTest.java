@@ -1,8 +1,12 @@
 package example03;
 
 public class InterfaceTest {
-	A a = new A();
-	a.methodA(new B());
+	public static void main(String[] args) {
+		A a = new A();
+		a.methodA(new B());	//a.methodA(B b); ==> B b = new B();
+		a.methodA(new C() );
+	}
+	
 }
 
 
@@ -23,3 +27,4 @@ class C{
 		System.out.println("methodB() in C Class");
 	}
 }
+
