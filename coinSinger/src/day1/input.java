@@ -7,5 +7,8 @@ public class input {
 	int service;	//서비스
 	int number;		//방 번호
 	
-
+class coin{
+	coin c
+	
+}
 }
