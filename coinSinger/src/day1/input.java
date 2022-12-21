@@ -8,7 +8,8 @@ public class input {
 	int number;		//방 번호
 	
 class coin{
-	coin c
+	input c = new input();
 	
-}
+	
+	}
 }
