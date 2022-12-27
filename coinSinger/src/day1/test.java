@@ -12,25 +12,27 @@ public class test {
 		int people = 0;	// 인원
 		int starttime = 0;	//들어간 시간
 		int rnum = 0; 		//룸 넘버
+		int choice = 0;		//선택
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("코인을 입력하세요 > ");
-		coin = sc.nextInt();
-		
-		switch(coin) {
-			case 0:
-				System.out.print("시간을 입력하세요 > ");
+		System.out.print("륨 번호를 입력하세요. > ");
+		rnum = sc.nextInt();
+
+		while(rnum > 0) {
+			System.out.println("1.코인	  2.시간");
+			choice = sc.nextInt();
+			if(choice == 1) {
+				System.out.print("코인 얼마나 넣어드릴까요? > ");
+				coin = sc.nextInt();
+			}else if(choice == 2) {
+				System.out.print("시간 얼마나 넣어드릴까요? > ");
 				time = sc.nextInt();
-				break;
-			default :
-				System.out.print("인원을 입력하세요 > ");
-				people = sc.nextInt();
-				break;
+			}else {
+				System.out.println("잘못 입력하셨습니다.");
+				
+			}
 		}
 		
-		for(int i=0;i<coin;i++) {
-			
-		}
 		System.out.println("입력한 코인 : " + coin + "개");
 		System.out.println("입력한 시간 : " + time + "분");
 		System.out.println("입력한 인원 : " + people + "명");
