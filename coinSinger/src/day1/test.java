@@ -11,7 +11,7 @@ public class test {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("륨 번호를 입력하세요. > ");
 		c.rnum = sc.nextInt();
-
+		
 		while(c.rnum < 25) {
 			System.out.println("코인제와 시간제 선택해주세요.");
 			System.out.print("1.코인	  2.시간  >>>> ");
@@ -19,12 +19,16 @@ public class test {
 			if(c.choice == 1) {
 				System.out.print("코인제 얼마나 넣어드릴까요? > ");
 				c.coin = sc.nextInt();
-				System.out.println(c.rnum + "번방 : 코인" + c.coin + "개");
+				System.out.print("서비스 얼마나 넣어드릴까요? > ");
+				c.service = sc.nextInt();
+				System.out.println(c.rnum + "번방 : 코인" + (c.coin + c.service) + "개");
 				break;
 			}else if(c.choice == 2) {
 				System.out.print("시간제 얼마나 넣어드릴까요? > ");
 				c.time = sc.nextInt();
-				System.out.println(c.rnum + "번방 : 시간 " + c.time + "분");
+				System.out.print("서비스 얼마나 넣어 드릴까요>? > ");
+				c.service = sc.nextInt();
+				System.out.println(c.rnum + "번방 : 시간 " + (c.time + c.service) + "분");
 				break;
 			}else {
 				System.out.println("잘못 입력하셨습니다.");
