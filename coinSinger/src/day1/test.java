@@ -35,7 +35,7 @@ public class test {
 			}
 		}
 		
-		System.out.println();
+		System.out.println("테스트입니다.");
 		
 	}
 }
