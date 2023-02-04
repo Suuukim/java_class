@@ -8,7 +8,7 @@ public class input {
 	int starttime = 0;	//들어간 시간
 	int rnum = 0; 		//룸 넘버
 	int choice = 0;		//선택
-	
+	int money = 0;		//금액
 	
 	public int getCoin() {
 		return coin;
@@ -51,6 +51,12 @@ public class input {
 	}
 	public void setChoice(int choice) {
 		this.choice = choice;
+	}
+	public int getMoney() {
+		return money;
+	}
+	public void setMoney(int money) {
+		this.money = money;
 	}
 	
 	
