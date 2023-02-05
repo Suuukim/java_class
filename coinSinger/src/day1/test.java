@@ -34,7 +34,7 @@ public class test {
 				System.out.println("잘못 입력하셨습니다.");
 			}
 		}
-		
+		sts
 		System.out.println("테스트입니다.");
 		System.out.println("테스트");
 	}
