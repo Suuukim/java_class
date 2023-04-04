@@ -1,0 +1,6 @@
+물리적 데이터 모델링
+
+tbl_member			회원테이블
+memberid(20)		아이디
+memberpw(30)		비밀번호
+member
