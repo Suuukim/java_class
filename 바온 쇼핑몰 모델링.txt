@@ -1,6 +1,25 @@
 물리적 데이터 모델링
 
 tbl_member			회원테이블
-memberid(20)		아이디
-memberpw(30)		비밀번호
-member
+memberid varchar2(20)		아이디
+memberpw varchar2(30)		비밀번호
+membername varchar2(20)		이름
+address varchar2(200)		주소
+email varchar2(200)		이메일
+phonenumber varchar2(200)	휴대폰번호
+area					지역
+
+tbl_admin			관리자테이블
+adminid varcahr2(20)		아이디
+adminpw varchar2(30)		비밀번호
+adminname varchar2(20)		이름
+aaddress varchar2(200)		주소
+aemail varchar2(200)		이메일
+aphonenumber varchar2(200)	휴대폰번호
+
+tbl_product			상품테이블
+productname			상품이름
+prodcutprice		가격
+
+
+
